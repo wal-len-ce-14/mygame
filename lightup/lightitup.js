@@ -1,4 +1,4 @@
-let M = 4;
+let M = 5;
 let view_size = 32;
 
 let view = document.getElementById("view")
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=> {
         block.addEventListener("click", ()=> change(i))
         view.appendChild(block);
     }
+    
     view.style.gridTemplateColumns = `repeat(${M}, 1fr)`
     view.style.gridTemplateRows = `repeat(${M}, 1fr)`
     if(M < 10){

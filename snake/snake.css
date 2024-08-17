@@ -1,0 +1,76 @@
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.753);
+    font-size: 1.2rem;
+}
+
+body{
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+/*                                                               
+    ####################################################################################################################################
+    ####################################################################################################################################
+*/
+.gameview{
+    margin: auto;
+    width: 35rem;
+    height: 35rem;
+    background-color: rgb(72, 35, 35);
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+    box-shadow: 5px 5px 5px rgb(59, 59, 59);
+    border: 3px black solid;
+}
+
+.block{
+    background-color: rgb(211, 211, 211);
+    border: black 1px solid;
+    border-radius: 0.6rem;
+    transition: 100ms;
+}
+#tail{
+    color: rgba(174, 255, 0, 0.807);
+    background-color: rgba(153, 255, 0, 0.84);
+    
+}
+
+#head{
+    background-color: rgba(70, 178, 20, 0.871);
+}
+
+#point{
+    background-color: rgb(255, 179, 179);
+    border-radius: 50%;
+    border: 0.2rem solid rgb(72, 35, 35);
+    box-shadow: 12px -12px 20px rgb(255, 0, 0) inset;
+}
+
+#score{
+    font-size: 2rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+#end{
+    display: none;
+    opacity: 0.85;
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(41, 41, 41);
+    font-size: 9rem;
+    text-align: center;
+    align-content: center;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
