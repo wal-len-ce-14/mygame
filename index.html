@@ -5,7 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wall</title>
 </head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        height: 100vh;
+        width: 70vw;
+        margin: auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .aside{
+        background-color: rgb(255, 112, 238);
+        height: 100%;
+    }
+    .mainpage{
+        align-items: center;
+        padding-top: 1rem;
+        height: 100%;
+        width: 60rem;   
+    }
+    button{
+        background-color: rgba(255, 155, 243, 0.46);
+        border-radius: 0.5rem;
+        border: 0;
+        width: 15rem;
+        height: 3rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+        box-shadow: 5px 5px 5px rgba(181, 0, 163, 0.914);
+    }
+    
+</style>
+<script>
+    function loadfrm(p){
+        document.getElementById("frm").src = p
+    }
+</script>
 <body>
-    <iframe src="lightup/lightitup.html" frameborder="0" height="1000%" width="100%"></iframe>
+    <div class="container">
+        <div class="aside">
+            <ul style="list-style: none">
+                <li><button style="margin-top: 5rem;" onclick="loadfrm('./lightup/lightitup.html')">light it up</button></li>
+                <li><button onclick='loadfrm("./snake/snake.html")'>snake</button></li>
+            </ul>
+        </div>
+        <div class="mainpage">
+            <iframe id="frm" src="lightup/lightitup.html" width="100%" height="99%" frameborder="0"  allowfullscreen>
+                Your browser does not support iframes.
+            </iframe>
+        </div>
+    </div>
 </body>
+
 </html>
